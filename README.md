@@ -7,8 +7,9 @@ This is a space invaders game made using python, the pygame libary
 
 ## _Setup_
 
-All you need to do is -
-```python
+If you have pygame already Installed none needed
+
+Else Just 
+```
 pip install pygame
 ```
-Feel free to change the icons and sound effects or anything else

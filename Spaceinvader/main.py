@@ -18,7 +18,6 @@ icon = pygame.image.load("Assets/space-invaders.png")
 pygame.display.set_icon(icon)
 
 
-
 #background
 background = pygame.image.load("Assets/background_space.png")
 
@@ -101,9 +100,9 @@ while running:
             running = False
 
         if event.type == pygame.KEYDOWN:
-            if event.key == pygame.K_LEFT:
+            if event.key == pygame.K_a:
                 playerX_change = -4
-            if event.key == pygame.K_RIGHT:
+            if event.key == pygame.K_d:
                 playerX_change = 4
             if event.key == pygame.K_SPACE:
                 if bullet_state == "ready":
@@ -112,7 +111,7 @@ while running:
                     bulletX = playerX
                     fire_bullet(playerX, bulletY)
         if event.type == pygame.KEYUP:
-            if event.key == pygame.K_RIGHT or event.key == pygame.K_LEFT:
+            if event.key == pygame.K_a or event.key == pygame.K_d:
                 playerX_change = 0
 
     #boundry
